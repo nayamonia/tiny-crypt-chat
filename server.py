@@ -21,7 +21,7 @@ class ServerThread(threading.Thread):
     def run(self):
         # Cria socket
         server = socket.socket()
-        # Pôe para escutar em host:porta
+        # Põe para escutar em host:porta
         server.bind((self.host, int(self.porta)))
         server.listen(1)
         # Passa a aceitar conexão
